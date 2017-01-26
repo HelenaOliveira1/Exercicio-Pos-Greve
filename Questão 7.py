@@ -9,6 +9,7 @@ def valorpagamento(prestacao, d_atraso, multa, m_dia):
         prestacao = prestacao+v_multa+v_dia
         print("Valor Cobrado: ", prestacao)
         print("")
+    return prestacao
 
 prestacao = 1
 aux = 0
@@ -19,9 +20,8 @@ while (prestacao != 0):
     d_atraso = float(input("Digite o número de dias de atraso: "))
     multa = 3.0/100.0
     m_dia = 0.1/100.0
-    valorpagamento(prestacao, d_atraso, multa, m_dia)
     aux += 1
-    prestacao_dia += prestacao
+    prestacao_dia += valorpagamento(prestacao, d_atraso, multa, m_dia)
         
 print("")
 print("Programa Encerrado")
