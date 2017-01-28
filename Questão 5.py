@@ -11,4 +11,4 @@ dias = horas/24
 meses = dias/30
 anos = meses/12
 
-print("Fumando assim, você perdeu, %.2f anos da sua vida." %anos)
+print("Fumando assim, você perdeu %.2f anos da sua vida." %anos)
